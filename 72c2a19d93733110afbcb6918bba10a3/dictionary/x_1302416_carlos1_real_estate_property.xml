@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a11429dd93733110afbcb6918bba1058" label="Real Estate Property" max_length="40" name="x_1302416_carlos1_real_estate_property" type="collection">
+        <element label="Address" max_length="32" name="address" reference="sys_report_map" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Rooms" max_length="40" name="rooms" type="integer"/>
+        <element label="Square feet" max_length="40" name="square_feet" type="integer"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="address"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
